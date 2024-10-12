@@ -15,8 +15,7 @@ with st.sidebar:
 
 # About Section
 if selected == "About":
-    st.write("Aspiring Machine Learning Engineer with experience in software development and data science. Proficient in Python, SQL, and tools for data analysis and visualization. Passionate about building ML models to derive insights and solve complex problems.")
-
+    st.info("Experienced Software Developer transitioning into Data Science. Skilled in Python, SQL, PowerBI, and Excel for data visualization. Proficient in web app development, database management, and data manipulation. Leveraging analytical skills for Data Science role.")
 # Skills Section
 elif selected == "Skills":
     st.subheader("Skills")
@@ -40,16 +39,19 @@ elif selected == "Projects":
     st.write("- Developed web scraping scripts, increasing data collection speed by 50%.")
     st.write("- Implemented dynamic filtering using Streamlit to enhance user experience.")
     st.write("- [GitHub Repository](https://github.com/venumadhav2407/redbus_streamlit_app)")
+    st.write("- [Demo link](https://redbus-app.streamlit.app/)")
 
     st.subheader("YouTube Ad View Prediction (Jul 2024)")
     st.write("**Technologies:** Python, Pandas, Numpy, Matplotlib, Scikit-Learn")
     st.write("- Applied label encoding and used ML algorithms including Linear Regression and Random Forest.")
     st.write("- Conducted cross-validation to fine-tune models and improve accuracy.")
+    st.write("- [GitHub Repository](https://github.com/venumadhav2407/youtube_adview_prediction_ml)")
 
     st.subheader("Music Player Using Flask (Apr 2024 -- May 2024)")
     st.write("**Technologies:** Flask, Jinja Templates")
     st.write("- Developed a web-based music player with search and play functionality.")
     st.write("- Integrated a secure login system to protect user privacy and data.")
+    st.write("- [GitHub Repository](https://github.com/venumadhav2407/music-player)")
 
 # Contact Information Section
 elif selected == "Contact Information":

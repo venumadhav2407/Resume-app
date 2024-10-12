@@ -18,17 +18,12 @@ if selected == "About":
     st.info("Experienced Software Developer transitioning into Data Science. Skilled in Python, SQL, PowerBI, and Excel for data visualization. Proficient in web app development, database management, and data manipulation. Leveraging analytical skills for Data Science role.")
 # Skills Section
 elif selected == "Skills":
-    st.subheader("Skills")
-    st.subheader("Programming Languages")
-    st.write("Python, SQL, JavaScript, HTML/CSS, PHP")
-    st.subheader("Data Science Libraries")
-    st.write("Pandas, Numpy, Matplotlib, Scikit-Learn, TensorFlow, PyTorch")
-    st.subheader("Machine Learning Techniques")
-    st.write("Supervised Learning, Unsupervised Learning, Neural Networks, Model Evaluation")
-    st.subheader("Tools and Technologies")
-    st.write("Git/GitHub, Jupyter Notebooks, Postman, Power BI, MS Excel")
-    st.subheader("Soft Skills")
-    st.write("Problem-solving, Collaboration, Analytical Thinking")
+    st.title("Skills")
+    st.write("**Languages:** `Python`, `JavaScript`, `HTML/CSS`, `PHP`, `SQL`")
+    st.write("**Data Science:** Pandas, Numpy, Matplotlib, Power BI, Machine Learning, Data Visualization, Data Wrangling")
+    st.write("**Tools:** Git/GitHub, Jupyter Notebooks, MS Excel")
+    st.write("**Soft Skills:** Problem-solving, Collaboration, Analytical Thinking")
+
 
 # Projects Section
 elif selected == "Projects":

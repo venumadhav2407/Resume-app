@@ -25,7 +25,7 @@ if selected == "About":
     if col1.button("Show Popup"):
         with st.modal("Popup Window"):
             st.write("This is a true popup window in Streamlit!")
-            st.image("https://placekitten.com/300/200")
+            st.image("imgg.jpg")
             st.button("Close")
 
     col2.image("imgg.jpg")

@@ -11,19 +11,7 @@ st.title("Bandla Venu Madhav")
 with st.sidebar:
     selected = option_menu("Menu", ["About", "Skills", "Projects", "Contact Information","Certifications", "Education", "Hobbies"],
                            icons=["person", "list-check", "file-earmark-text", "envelope", "file-earmark-check", "book", "heart"],
-                           menu_icon="cast", default_index=0,
-                           styles={
-                                "container": {"padding": "5px", "background-color": "#f0f0f0"},
-                                "icon": {"color": "orange", "font-size": "25px"}, 
-                                "nav-link": {
-                                    "font-size": "18px",
-                                    "text-align": "left",
-                                    "margin": "0px",
-                                    "--hover-color": "#eee",
-                                },
-                                "nav-link-selected": {"background-color": "#02ab21"},
-                            }
-                          )
+                           menu_icon="cast", default_index=0)
 
 # About Section
 if selected == "About":

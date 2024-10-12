@@ -17,7 +17,7 @@ with st.sidebar:
 if selected == "About":
     col1, col2 = st.columns(2, vertical_alignment="center")
     col1.info("Experienced Software Developer transitioning into Data Science. Skilled in Python, SQL, PowerBI, and Excel for data visualization. Proficient in web app development, database management, and data manipulation. Leveraging analytical skills for Data Science role.")
-    col2.image("img.jpg")
+    col2.image("imgg.jpg")
 # Skills Section
 elif selected == "Skills":
     st.title("Skills")

@@ -4,8 +4,6 @@ from streamlit_option_menu import option_menu
 # Set the page title
 st.set_page_config(page_title="Bandla Venu Madhav's ML Engineer Portfolio", page_icon=":star:", layout="wide")
 
-# PDF View 
-# def Pdf_view():
 
 # Title
 st.title("Bandla Venu Madhav")

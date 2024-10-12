@@ -3,8 +3,33 @@ import streamlit as st
 # Set the page title
 st.set_page_config(page_title="Bandla Venu Madhav's ML Engineer Portfolio", page_icon=":star:", layout="wide")
 
+# Custom CSS for styling
+st.markdown("""
+<style>
+    .header {
+        background-color: #1C033C;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    .sticky-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    .project-title {
+        color: #1C033C;
+        font-weight: bold;
+    }
+    .subheader {
+        color: #371e77;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # Title and Introduction
-st.title("Bandla Venu Madhav")
+st.markdown('<div class="header"><h1>Bandla Venu Madhav</h1></div>', unsafe_allow_html=True)
 st.write("Aspiring Machine Learning Engineer with experience in software development and data science. Proficient in Python, SQL, and tools for data analysis and visualization. Passionate about building ML models to derive insights and solve complex problems.")
 
 # Contact Information
@@ -77,12 +102,26 @@ st.write("- Coding practice")
 # Download Resume Section
 st.header("Download My Resume")
 with open("Bandla_Venumadhav_resume.pdf", "rb") as file:
+    st.markdown(f'<a href="data:application/pdf;base64,{file.read().encode("base64")}">', unsafe_allow_html=True)
     btn = st.download_button(
         label="Download Resume",
         data=file,
         file_name="Bandla_Venu_Madhav_Resume.pdf",
-        mime="application/pdf"
+        mime="application/pdf",
+        key="download_resume",
+        help="Click to download my resume."
     )
+
+# Sticky Download Button
+st.markdown('<style>.sticky-button { position: fixed; bottom: 20px; right: 20px; }</style>', unsafe_allow_html=True)
+st.button("Download Resume", key="sticky_download", on_click=lambda: st.download_button(
+    label="Download Resume",
+    data=file,
+    file_name="Bandla_Venu_Madhav_Resume.pdf",
+    mime="application/pdf",
+    key="download_resume",
+    help="Click to download my resume.",
+), css_class='sticky-button')
 
 # Footer
 st.markdown("---")

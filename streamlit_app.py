@@ -4,6 +4,9 @@ from streamlit_option_menu import option_menu
 # Set the page title
 st.set_page_config(page_title="Bandla Venu Madhav's ML Engineer Portfolio", page_icon=":star:", layout="wide")
 
+# PDF View 
+# def Pdf_view():
+
 # Title
 st.title("Bandla Venu Madhav")
 
@@ -16,9 +19,17 @@ with st.sidebar:
 # About Section
 if selected == "About":
     col1, col2 = st.columns(2, vertical_alignment="center")
+    
     col1.header("I'am **Software Developer**")
     col1.info("Experienced Software Developer transitioning into Data Science. Skilled in Python, SQL, PowerBI, and Excel for data visualization. Proficient in web app development, database management, and data manipulation. Leveraging analytical skills for Data Science role.")
+    if col1.button("Show Popup"):
+        with st.modal("Popup Window"):
+            st.write("This is a true popup window in Streamlit!")
+            st.image("https://placekitten.com/300/200")
+            st.button("Close")
+
     col2.image("imgg.jpg")
+    
 # Skills Section
 elif selected == "Skills":
     st.title("Skills")

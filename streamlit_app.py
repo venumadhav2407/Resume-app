@@ -10,7 +10,7 @@ st.title("Bandla Venu Madhav")
 # Create a sidebar menu
 with st.sidebar:
     selected = option_menu("Menu", ["About", "Skills", "Projects", "Contact Information","Certifications", "Education", "Hobbies"],
-                           icons=["person", "list-check", "file-earmark-text", "envelope"],
+                           icons=["person", "list-check", "file-earmark-text", "envelope", "file-earmark-check", "graduation-cap", "heart"],
                            menu_icon="cast", default_index=0)
 
 # About Section

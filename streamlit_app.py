@@ -22,12 +22,7 @@ if selected == "About":
     
     col1.header("I'am **Software Developer**")
     col1.info("Experienced Software Developer transitioning into Data Science. Skilled in Python, SQL, PowerBI, and Excel for data visualization. Proficient in web app development, database management, and data manipulation. Leveraging analytical skills for Data Science role.")
-    if col1.button("Show Popup"):
-        with st.modal("Popup Window"):
-            st.write("This is a true popup window in Streamlit!")
-            st.image("imgg.jpg")
-            st.button("Close")
-
+   
     col2.image("imgg.jpg")
     
 # Skills Section

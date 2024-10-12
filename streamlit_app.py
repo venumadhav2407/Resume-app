@@ -1,20 +1,25 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
 
 # Set the page title
 st.set_page_config(page_title="Bandla Venu Madhav's ML Engineer Portfolio", page_icon=":star:", layout="wide")
 
-# Sidebar for navigation
-st.sidebar.title("Navigation")
-menu = st.sidebar.radio("Select a Section", ("About", "Skills", "Projects", "Contact Information"))
+# Title
+st.title("Bandla Venu Madhav")
+
+# Create a sidebar menu
+with st.sidebar:
+    selected = option_menu("Menu", ["About", "Skills", "Projects", "Contact Information"],
+                           icons=["person", "list-check", "file-earmark-text", "envelope"],
+                           menu_icon="cast", default_index=0)
 
 # About Section
-if menu == "About":
-    st.title("About Me")
+if selected == "About":
     st.write("Aspiring Machine Learning Engineer with experience in software development and data science. Proficient in Python, SQL, and tools for data analysis and visualization. Passionate about building ML models to derive insights and solve complex problems.")
 
 # Skills Section
-elif menu == "Skills":
-    st.title("Skills")
+elif selected == "Skills":
+    st.subheader("Skills")
     st.subheader("Programming Languages")
     st.write("Python, SQL, JavaScript, HTML/CSS, PHP")
     st.subheader("Data Science Libraries")
@@ -27,8 +32,8 @@ elif menu == "Skills":
     st.write("Problem-solving, Collaboration, Analytical Thinking")
 
 # Projects Section
-elif menu == "Projects":
-    st.title("Projects")
+elif selected == "Projects":
+    st.header("Projects")
     
     st.subheader("Redbus Streamlit Application (Sep 2024)")
     st.write("**Technologies:** Python, Selenium, Streamlit, SQLite")
@@ -47,8 +52,8 @@ elif menu == "Projects":
     st.write("- Integrated a secure login system to protect user privacy and data.")
 
 # Contact Information Section
-elif menu == "Contact Information":
-    st.title("Contact Information")
+elif selected == "Contact Information":
+    st.header("Contact Information")
     st.write("📧 [venumadhav.07.24@gmail.com](mailto:venumadhav.07.24@gmail.com)")
     st.write("📞 +91 84381 06497")
     st.write("🔗 [GitHub](https://github.com/venumadhav2407) | [LinkedIn](https://linkedin.com/in/venumadhav07) | [Kaggle](https://www.kaggle.com/venumadhav06)")

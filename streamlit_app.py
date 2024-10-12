@@ -19,7 +19,7 @@ if selected == "About":
 # Skills Section
 elif selected == "Skills":
     st.title("Skills")
-    st.write("**Languages:** `Python`, `JavaScript`, `HTML/CSS`, `PHP`, `SQL`")
+    st.write("**Languages:** Python, JavaScript, HTML/CSS, PHP, SQL")
     st.write("**Data Science:** Pandas, Numpy, Matplotlib, Power BI, Machine Learning, Data Visualization, Data Wrangling")
     st.write("**Tools:** Git/GitHub, Jupyter Notebooks, MS Excel")
     st.write("**Soft Skills:** Problem-solving, Collaboration, Analytical Thinking")

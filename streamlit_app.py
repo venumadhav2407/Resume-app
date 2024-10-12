@@ -76,7 +76,7 @@ st.write("- Coding practice")
 
 # Download Resume Section
 st.header("Download My Resume")
-with open("resume.pdf", "rb") as file:
+with open("Bandla_Venumadhav_resume.pdf", "rb") as file:
     btn = st.download_button(
         label="Download Resume",
         data=file,
